@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@coinbase/wallet-sdk": "^3.7.1",
+    "@livechat/widget-vue": "^1.3.0",
+    "tronweb": "^5.2.0",
+    "uni-read-pages": "^1.0.5",
+    "uni-simple-router": "*",
+    "walletconnect": "^1.7.8",
+    "web3": "^4.0.1",
+    "webpack": "^4.4.1"
+  },
+  "devDependencies": {
+    "js-md5": "^0.7.3"
+  }
+}

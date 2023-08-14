@@ -1,0 +1,188 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "Home"
+				// // #ifndef APP-PLUS
+				// "enablePullDownRefresh": false
+				// // #endif
+				// "navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/order/index",
+			"style": {
+				"navigationBarTitleText": "Order",
+				// #ifndef APP-PLUS
+				"enablePullDownRefresh": false
+				// #endif
+				// "navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "My Profile",
+				// #ifndef APP-PLUS
+				"enablePullDownRefresh": false
+				// #endif
+				// "navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/login/index",
+			"style": {
+				// #ifndef APP-PLUS
+				"enablePullDownRefresh": true,
+				// #endif
+				"navigationStyle": "custom",
+				"app-plus": {
+					"popGesture": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/index/pay",
+			"style": {
+				"navigationBarTitleText": "Payment"
+			}
+		},
+		{
+			"path": "pages/my/Invite/index",
+			"style": {
+				"navigationBarTitleText": "Invite"
+			}
+		},
+		{
+			"path": "pages/my/Invite/list",
+			"style": {
+				"navigationBarTitleText": "My Invitation Record"
+			}
+		},
+		{
+			"path": "pages/my/modify/password",
+			"style": {
+				"navigationBarTitleText": "Change password"
+			}
+		},
+		{
+			"path": "pages/my/Bank/index",
+			"style": {
+				"navigationBarTitleText": "Bank Card"
+			}
+		},
+		{
+			"path": "pages/login/equipment/index",
+			"style": {
+				"navigationBarTitleText": "Authentication"
+			}
+		},
+		{
+			"path": "pages/my/Bank/add",
+			"style": {
+				"navigationBarTitleText": "Bank Card"
+			}
+		},
+		{
+			"path": "pages/my/withdraw/index",
+			"style": {
+				"navigationBarTitleText": "Apply For Drawal"
+			}
+		},
+		{
+			"path": "pages/my/withdraw/success",
+			"style": {
+				"navigationBarTitleText": "Under Review"
+			}
+		},
+		{
+			"path": "pages/register/index",
+			"style": {
+				"navigationBarTitleText": "Register"
+			}
+		},
+		{
+			"path": "pages/index/kickback/index",
+			"style": {
+				"navigationBarTitleText": "Kickback"
+			}
+		},
+		{
+			"path": "pages/order/details",
+			"style": {
+				"navigationBarTitleText": "Details"
+			}
+		},
+		{
+			"path": "pages/my/customer/index",
+			"style": {
+				"navigationBarTitleText": "Customer Service"
+			}
+		}
+	],
+	"globalStyle": {
+		// "navigationBarTextStyle": "black",
+		// "navigationBarTitleText": "uni-app",
+		// "navigationBarBackgroundColor": "#F8F8F8",
+		// "backgroundColor": "#F8F8F8",
+		// #ifdef H5
+		"h5": {
+			"titleNView": false
+		},
+		// #endif
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "UUBB",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#F8F8F8",
+		"enablePullDownRefresh": false,
+		// "maxWidth":375,
+		"rpxCalcMaxDeviceWidth": 375,
+		"rpxCalcBaseDeviceWidth": 375
+		// "rpxCalcIncludeWidth":0
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#007AFF",
+		"borderStyle": "black",
+		"backgroundColor": "#FFFFFF",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/tabbar/list.png",
+			"selectedIconPath": "static/tabbar/list_active.png",
+			"text": "Home"
+		}, {
+			"pagePath": "pages/order/index",
+			"iconPath": "static/tabbar/order.png",
+			"selectedIconPath": "static/tabbar/order_active.png",
+			"text": "Order"
+		}, {
+			"pagePath": "pages/my/my",
+			"iconPath": "static/tabbar/me.png",
+			"selectedIconPath": "static/tabbar/me_active.png",
+			"text": "My Profile"
+		}]
+	},
+	"easycom": {
+		"autoscan": true, //是否自动扫描组件
+		"custom": { //自定义扫描规则
+			"^uni-(.*)": "@/components/uni-$1.vue"
+		}
+	},
+	// "navigationStyle":"custom",
+	"uniIdRouter": {
+		"loginPage": "uni_modules/uni-id-pages/pages/login/login-withoutpwd",
+		"needLogin": [
+			"/uni_modules/uni-id-pages/pages/userinfo/userinfo"
+		],
+		"resToLogin": true
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+}

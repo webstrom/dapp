@@ -1,0 +1,1 @@
+import{o as s,e as t,w as e,i as r,f as a,Z as o}from"./index-ec5cfb06.js";import{_ as n}from"./_plugin-vue_export-helper.1b428a4d.js";const c=n({},[["render",function(n,c){const i=o,l=r;return s(),t(l,null,{default:e((()=>[a(i,{src:"https://direct.lc.chat/15590316/"})])),_:1})}]]);export{c as default};
