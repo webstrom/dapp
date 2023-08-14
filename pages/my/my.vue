@@ -13,7 +13,7 @@
 				</view>
 				<view class="title font mt-2" @click="orderCodeHoled(walletAddress)">{{walletAddress}}</view>
 			</view>
-			<view class="p-3 flex align-center background-white border-radius-2 mt-1">
+			<!-- <view class="p-3 flex align-center background-white border-radius-2 mt-1">
 				<view class="ml-2 width-100 font-md color-2">
 					<view class="border-bottom pb-2 flex justify-between" style="text-align: left;"><text>E-mail:</text>
 						<text>{{userData.email}}</text>
@@ -26,7 +26,7 @@
 					</view>
 					<view class="pt-2 flex justify-between" style="text-align: left;"><text>Invitation Code:</text> <text class="color-1" @click="orderCodeHoled(userData.invitationCode)">{{userData.invitationCode}}</text></view>
 				</view>
-			</view>
+			</view> -->
 		</view>
 
 		<view class="p-3 pt-0">
@@ -118,8 +118,8 @@
 				</view>
 			</view> -->
 
-			<view class="btn-login font-lg mt-2 p-3 mt-6 border-radius-2 background-loginout" @click="loginOutHoled">
-				Logout</view>
+			<!-- <view class="btn-login font-lg mt-2 p-3 mt-6 border-radius-2 background-loginout" @click="loginOutHoled">
+				Logout</view> -->
 		</view>
 	</view>
 </template>
